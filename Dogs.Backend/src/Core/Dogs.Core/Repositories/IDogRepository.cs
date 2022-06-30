@@ -5,6 +5,6 @@ namespace Dogs.Core.Repositories
     public interface IDogRepository
     {
         Task<Dog> CreateDogAsync(Dog dog);
-        Task GetDogsAsync();
+        Task<List<Dog>> GetDogsAsync();
     }
 }
