@@ -2,9 +2,9 @@
 {
     internal class InvalidTailLenghtException : CustomException
     {
-        public int Value { get; }
+        public double Value { get; }
 
-        public InvalidTailLenghtException(int value) : base($"Tail Lenght {value} is invalid")
+        public InvalidTailLenghtException(double value) : base($"Tail Lenght {value} is invalid")
         {
             Value = value;
         }

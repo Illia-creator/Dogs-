@@ -4,9 +4,9 @@ namespace Dogs.Core.ValueObjects
 {
     public class Weight
     {
-        public int Value { get; }
+        public double Value { get; }
 
-        public Weight(int velue)
+        public Weight(double velue)
         {
             if (Value is < 0 or > 100)
                 throw new InvalidWeightException(velue);
@@ -14,8 +14,8 @@ namespace Dogs.Core.ValueObjects
             Value = Value;
 
         }
-        public static implicit operator Weight(int value) => new(value);
+        public static implicit operator Weight(double value) => new(value);
 
-        public static implicit operator int(Weight value) => value.Value;
+        public static implicit operator double(Weight value) => value.Value;
     }
 }

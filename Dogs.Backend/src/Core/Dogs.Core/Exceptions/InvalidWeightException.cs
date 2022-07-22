@@ -2,8 +2,8 @@
 {
     internal class InvalidWeightException : CustomException
     {
-        public int Value { get; }
-        public InvalidWeightException(int value):base($"Weight {value} is invalid.")
+        public double Value { get; }
+        public InvalidWeightException(double value):base($"Weight {value} is invalid.")
         {
             Value = value;
         }
