@@ -1,6 +1,6 @@
 ﻿using Dogs.Application.Abstractions;
 
-namespace Dogs.Application.Commands
+namespace Dogs.Application.Commands.UsualCommands
 {
     public class CreateDogCommand : ICommand
     {

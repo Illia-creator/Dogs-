@@ -1,4 +1,4 @@
-﻿using Dogs.Application.Commands;
+﻿using Dogs.Application.Commands.UsualCommands;
 using Dogs.Application.Dto;
 
 namespace Dogs.Application.Mapper
