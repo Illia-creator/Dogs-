@@ -14,4 +14,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Dogs.Application\Dogs.Application.csproj" />
+  </ItemGroup>
+
 </Project>

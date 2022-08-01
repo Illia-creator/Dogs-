@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Application\Dogs.Application\Dogs.Application.csproj" />
     <ProjectReference Include="..\..\Core\Dogs.Core\Dogs.Core.csproj" />
   </ItemGroup>
 

@@ -1,5 +1,6 @@
 ﻿using Dogs.Application.Commands.UsualCommands;
 using Dogs.Application.Dto;
+using Dogs.Core.Entities;
 
 namespace Dogs.Application.Mapper
 {
@@ -14,6 +15,18 @@ namespace Dogs.Application.Mapper
                 TailLenght = createDogCommand.TailLenght,
                 Weight = createDogCommand.Weight
             };
+        }
+
+        public static Dog CreateDogDtoToDog(this CreateDogDto createDogDto)
+        {
+            return new Dog
+            {
+                Name = createDogDto.Name,
+                Color = createDogDto.Color,
+                TailLenght = createDogDto.TailLenght,
+                Weight = createDogDto.Weight
+            };
+        
         }
     }
 }
